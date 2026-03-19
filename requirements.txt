@@ -1,0 +1,10 @@
+pandas
+numpy
+scikit-learn
+scipy
+ib-insync
+schwab-py
+python-dotenv
+requests
+tenacity
+pytest
