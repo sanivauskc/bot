@@ -102,7 +102,7 @@ def build_feature_frame(
 
     feature_columns = list(_default_feature_columns())
     merged[feature_columns] = merged[feature_columns].replace([np.inf, -np.inf], np.nan)
-    merged[feature_columns] = merged[feature_columns].fillna(method="ffill").fillna(0.0)
+    merged[feature_columns] = merged[feature_columns].ffill().fillna(0.0)
     return merged
 
 
